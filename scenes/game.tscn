@@ -1,17 +1,206 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwhygk7kaaxho"]
+[gd_scene load_steps=14 format=4 uid="uid://dwhygk7kaaxho"]
 
 [ext_resource type="PackedScene" uid="uid://v6iee0uhxhr" path="res://entities/player.tscn" id="1_t2xf0"]
+[ext_resource type="Texture2D" uid="uid://dgte160mm1thn" path="res://sprites/4 - Winter World/Terrain (16 x 16).png" id="2_s3m7n"]
+[ext_resource type="Texture2D" uid="uid://c2dtw5xwb47tn" path="res://sprites/4 - Winter World/Winter_entities (16 x 16).png" id="3_t8cc6"]
+[ext_resource type="Texture2D" uid="uid://dad1qsuvjx1og" path="res://sprites/1 - Grassland/Terrain (16 x 16).png" id="3_wm5l8"]
+[ext_resource type="Texture2D" uid="uid://bixsf2firxoc3" path="res://sprites/1 - Grassland/Grassland_entities (16 x 16).png" id="5_r4mrc"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_umc6d"]
-size = Vector2(151.75, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_76ejj"]
+size = Vector2(20, 250)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a1fxe"]
+resource_name = "Snow"
+texture = ExtResource("2_s3m7n")
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0/physics_layer_0/polygon_0/one_way = true
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0/physics_layer_0/polygon_0/one_way = true
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+3:3/0 = 0
+3:2/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
+5:2/0 = 0
+4:2/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+5:5/0 = 0
+4:5/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:3/0/physics_layer_0/polygon_0/one_way = true
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0/physics_layer_0/polygon_0/one_way = true
+5:3/0 = 0
+4:3/0 = 0
+4:8/0 = 0
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0/physics_layer_0/polygon_0/one_way = true
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0/physics_layer_0/polygon_0/one_way = true
+11:3/0 = 0
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:3/0/physics_layer_0/polygon_0/one_way = true
+13:3/0 = 0
+13:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:3/0/physics_layer_0/polygon_0/one_way = true
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0/physics_layer_0/polygon_0/one_way = true
+11:2/0 = 0
+11:4/0 = 0
+11:5/0 = 0
+15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:3/0/physics_layer_0/polygon_0/one_way = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ogpqt"]
+resource_name = "Grass"
+texture = ExtResource("3_wm5l8")
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+11:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rot5h"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_a1fxe")
+sources/2 = SubResource("TileSetAtlasSource_ogpqt")
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_6lwt6"]
+tile_data = PackedInt32Array(65536, 196608, 5, 1, 65536, 1, 65538, 196608, 5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uotvx"]
+texture = ExtResource("3_t8cc6")
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+1:5/0 = 0
+1:5/0/z_index = 2
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+3:5/size_in_atlas = Vector2i(2, 1)
+3:5/0 = 0
+3:5/0/z_index = 2
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y0o6s"]
+texture = ExtResource("5_r4mrc")
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+14:5/0 = 0
+16:5/0 = 0
+18:5/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+9:1/size_in_atlas = Vector2i(3, 3)
+9:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f7a83"]
+sources/0 = SubResource("TileSetAtlasSource_uotvx")
+sources/1 = SubResource("TileSetAtlasSource_y0o6s")
+pattern_0 = SubResource("TileMapPattern_6lwt6")
 
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_t2xf0")]
-position = Vector2(59, 49)
+z_index = 1
+position = Vector2(274, 96)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(77.125, 97)
-shape = SubResource("RectangleShape2D_umc6d")
+position = Vector2(0, 115)
+shape = SubResource("RectangleShape2D_76ejj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(764, 112)
+shape = SubResource("RectangleShape2D_76ejj")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Terrain" type="TileMapLayer" parent="World"]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAsAAAADAAEAAAABAAsAAAAEAAEAAAACAAsAAAAEAAEAAAADAAsAAAAEAAEAAAAEAAoAAAADAAEAAAAFAAoAAAAEAAEAAAAGAAoAAAAEAAEAAAAHAAoAAAAEAAEAAAAIAAoAAAAEAAEAAAAJAAoAAAAEAAEAAAAKAAkAAAADAAEAAAALAAkAAAAEAAEAAAAMAAkAAAAEAAEAAAANAAkAAAAEAAEAAAAOAAkAAAAEAAEAAAAPAAkAAAAEAAEAAAAQAAgAAAADAAEAAAARAAgAAAAEAAEAAAASAAgAAAAFAAEAAAAAAAwAAAADAAIAAAABAAwAAAAEAAMAAAACAAwAAAAEAAMAAAADAAwAAAAEAAMAAAAEAAwAAAAEAAMAAAAFAAwAAAAEAAMAAAAGAAwAAAAEAAMAAAAIAAwAAAAEAAMAAAAOAAwAAAAEAAQAAAAPAAwAAAAEAAQAAAAQAAwAAAAEAAQAAAARAAwAAAAEAAQAAAASAAwAAAAFAAIAAAASAA0AAAAFAAIAAAASAAkAAAAFAAIAAAASAAoAAAAFAAIAAAASAAsAAAAFAAIAAAANAAoAAAAEAAMAAAAMAAoAAAAEAAMAAAALAAoAAAAEAAQAAAAKAAoAAAADAAMAAAAKAAsAAAAEAAMAAAAJAAsAAAAEAAMAAAAIAAsAAAAEAAMAAAAHAAsAAAAEAAMAAAAGAAsAAAAEAAMAAAAFAAsAAAAEAAMAAAAEAAsAAAADAAMAAAALAAsAAAAEAAMAAAAMAAsAAAAEAAMAAAANAAsAAAAEAAMAAAAOAAoAAAAEAAMAAAAPAAoAAAAEAAMAAAAPAAsAAAAEAAMAAAAQAAsAAAAEAAMAAAAQAAoAAAAEAAMAAAAQAAkAAAADAAMAAAARAAkAAAAEAAMAAAARAAoAAAAEAAMAAAASAA4AAAAEAAEAAAATAA4AAAAEAAEAAAARAA4AAAAEAAEAAAAQAA4AAAAEAAEAAAAPAA4AAAAEAAEAAAAOAA4AAAAEAAEAAAANAA4AAAAEAAEAAAAMAA4AAAAEAAEAAAALAA4AAAAEAAEAAAAKAA4AAAAEAAEAAAAJAA4AAAAEAAEAAAAIAA4AAAAEAAEAAAAHAA4AAAAEAAEAAAAGAA4AAAAEAAEAAAAFAA4AAAAEAAEAAAAEAA4AAAAEAAEAAAADAA4AAAAEAAEAAAACAA4AAAAEAAEAAAABAA4AAAAEAAEAAAAAAA4AAAABAAMAAAAUAA4AAAAEAAEAAAAVAA4AAAAEAAEAAAAWAA4AAAAEAAEAAAAXAA4AAAAEAAEAAAAYAA4AAAAEAAEAAAAZAA4AAAAEAAEAAAAaAA4AAAAEAAEAAAAbAA4AAAAEAAEAAAAcAA4AAAAHAAMAAAAAAA0AAAADAAIAAAABAA0AAAAEAAMAAAACAA0AAAAEAAMAAAADAA0AAAAEAAMAAAAEAA0AAAAEAAMAAAAFAA0AAAAEAAMAAAAGAA0AAAAEAAMAAAAHAA0AAAAEAAMAAAAIAA0AAAAEAAMAAAARAA0AAAAEAAMAAAAQAA0AAAAEAAQAAAAPAA0AAAAEAAMAAAAOAA0AAAAEAAMAAAANAA0AAAAEAAMAAAAMAA0AAAAEAAMAAAALAA0AAAAEAAMAAAAKAA0AAAAEAAMAAAAJAA0AAAAEAAMAAAANAAwAAAAEAAMAAAAKAAwAAAAEAAMAAAALAAwAAAAEAAMAAAAHAAwAAAAEAAMAAAAJAAwAAAAEAAMAAAAMAAwAAAAEAAMAAAAOAAsAAAAEAAMAAAARAAsAAAAEAAMAAAAWAAsAAAAJAAMAAAAXAAsAAAAKAAMAAAAYAAsAAAAKAAMAAAAZAAsAAAAKAAMAAAAaAAsAAAANAAMAAAAfAA4AAgABAAMAAAAgAA4AAgAEAAEAAAAhAA4AAgAEAAEAAAAiAA4AAgAEAAEAAAAjAA4AAgAEAAEAAAAkAA4AAgAEAAEAAAAlAA4AAgAEAAEAAAA=")
+tile_set = SubResource("TileSet_rot5h")
+
+[node name="Props" type="TileMapLayer" parent="World"]
+tile_map_data = PackedByteArray("AAALAAcAAAABAAEAAAARAAYAAAAFAAEAAAAHAAwAAAABAAEAAAANAAwAAAABAAEAAAAMAAgAAAABAAUAAAAPAAgAAAABAAUAAAAUAA0AAAABAAUAAAAbAA0AAAABAAUAAAAFAAkAAAADAAUAAAAGAAgAAAABAAEAAAAHAAkAAAADAAUAAAAXAAoAAAADAAUAAAAYAAkAAAABAAEAAAAZAAoAAAADAAUAAAAfAA0AAQADAAUAAAAgAA0AAQABAAUAAAAhAA0AAQABAAUAAAAiAA0AAQABAAUAAAAjAA0AAQABAAUAAAAkAA0AAQABAAUAAAAiAAwAAQAJAAEAAAAjAAwAAQAFAAEAAAAhAAwAAQAFAAEAAAA=")
+tile_set = SubResource("TileSet_f7a83")
